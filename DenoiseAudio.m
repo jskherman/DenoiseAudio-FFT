@@ -1,4 +1,4 @@
-%--------------------------------------------------------------------------
+%--------------------------------------------------------------------
 %       USAGE: DenoiseAudio
 %
 %     AUTHORS: Arlie Brual, Je Sian Keith Herman, Giane Manoguid
@@ -6,7 +6,9 @@
 %    MODIFIED: Arlie Brual, Je Sian Keith Herman, Giane Manoguid
 %        DATE: May 26, 2021
 %   
-% DESCRIPTION: This function calulates values and plots data
+% DESCRIPTION: This function takes in an audio file and removes the
+%              noise by cutting out the unwanted frequencies using
+%              the Fast Fourier transform.
 %   
 %      INPUTS: file = 'The audio file that is to be filtered.' 
 %         directory = 'Directory of the audio file.'
@@ -15,9 +17,7 @@
 %
 %     OUTPUTS: file_filtered = 'The filtered audio file saved in the
 %                               same directory as the original file.'
-%
-%  REFERENCES: None
-%--------------------------------------------------------------------------
+%--------------------------------------------------------------------
 
 % Clear all variables
 close all; clear all; clc;
